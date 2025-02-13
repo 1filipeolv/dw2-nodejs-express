@@ -17,3 +17,5 @@ cidade ="Jacupiranga" // Let permite alterar o valor.
 const message = "Hello, World! Iniciando estudos com Javascript" 
 
 console.log(message)
+
+let teste = "Teste"
