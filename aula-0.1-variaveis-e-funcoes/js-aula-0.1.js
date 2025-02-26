@@ -94,26 +94,29 @@ const Dobro = (x) => {
 console.log(`Função dobro com Arrow Function. Resultado: ${Dobro(20)}.`);
 
 // ARROW FUNCTION COM MAIS DE UM PARÂMETRO
-const calc = (num1, operador, num2)=> {
-    return eval(`${num1} ${operador} ${num2}`)
-}
-console.log(`O resultado da operação é ${calc(6, '*', 6)}.`)
+const calc = (num1, operador, num2) => {
+  return eval(`${num1} ${operador} ${num2}`);
+};
+console.log(`O resultado da operação é: ${calc(6, "*", 6)}.`);
 
 // SIMPLIFICANDO ARROW FUNCTION COM APENAS UM RETORNO
 
-const Calc = (num1, operador, num2)=> eval(`${num1} ${operator} ${num2}`)
-console.log(`O resultado da operação é ${Calc(7, '*', 7)}.`)
+const Calc = (num1, operador, num2) => eval(`${num1} ${operador} ${num2}`);
+
+console.log(`O reusultado da operação eh: ${Calc(7, "*", 7)}`);
+
 
 // IIFE - Immediatelu Invoked Function Expression
 // Funlçao Imediata - última \o/
-const iife = (function(){
-    console.log("Estou sendo executada imediatamente...")
-})
+const iife = (function () {
+  console.log("Estou sendo executada imediatamente...");
+})();
 
-// IIFE COM PARÂMETRO 
-const start = (function(app) {
-    console.log('Executando imediatamente o app ${app}.')
-})("Whatsapp")
+// IIFE COM PARÂMETRO
+const start = (function (app) {
+    console.log(`Executando imediatamente o app ${app}`);
+  })("Whatsapp");
+  
 
 // git add .
 // git commit -m "@seu-username"
