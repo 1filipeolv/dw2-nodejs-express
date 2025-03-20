@@ -62,13 +62,40 @@ console.log(batman.investigar());
 
 //Exercicio 2
 
+const dataModificada = () => {
+    const dataAtual = new Date();
+    dataAtual.setDate(dataAtual.getDate() + 3);
+    dataAtual.setMonth(dataAtual.getMonth() + 2);
+    dataAtual.setFullYear(dataAtual.getFullYear() + 1);
+    return `${dataAtual.getDate()}/${dataAtual.getMonth() + 1}/${dataAtual.getFullYear()}`;
+};
 
-const dataAtual = new Date();
-dataAtual.setDate(dataAtual.getDate() + 3);
-dataAtual.setMonth(dataAtual.getMonth() + 2);
-dataAtual.setFullYear(dataAtual.getFullYear() + 1);
+console.log(dataModificada());
 
-const dia = dataAtual.getDate();
-const mes = dataAtual.getMonth() + 1;
-const ano = dataAtual.getFullYear();
-console.log(dia + "/" + mes + "/" + ano);
+// Exercicio 3
+
+const converterMoeda = (salario) => {
+    const dolar = salario * 0.176;
+    const euro = salario * 0.16;
+
+    console.log(dolar.toLocaleString('en', {style: 'currency', currency:'USD'}));
+
+    console.log(euro.toLocaleString('eu', {style: 'currency', currency:'EUR'}));
+
+};
+
+converterMoeda(1000);
+
+// Exercicio 4
+
+
+const variedade = nome => {
+    console.log("Nome em letra maiúscula: " + nome.toUpperCase());
+    console.log("Nome em letra minúscula: " + nome.toLowerCase());
+    console.log("A quantidade de letras: " + nome.length);
+};
+
+variedade("Filipe de Oliveira Lima");
+
+
+
