@@ -22,24 +22,17 @@ app.get("/perfil", (req,res) => {
 
 // ROTA DE PRODUTOS
 app.get("/produtos/:produto?", (req,res) => {
-
-// Array com lista de produtos
-const produtos = ['Computador', 'Celular', 'Tablet', 'Notebook']
-
     // Coletando o parâmetro da rota
     const produto = req.params.produto
     res.render("produtos",{
         // Enviando a variável produto para a página
-        produto : produto,
-        produtos : produtos
-
+        produto : produto
     })
 })
 
-
 // Iniciando o servidor da aplicação na porta 8080
 // O método listen do Express inicia um servidor
-app.listen(8083, (error) => {
+app.listen(8082, (error) => {
     if(error){
         console.log("Ocorreu um erro ao iniciar o servidor!" + error)
     } else {
