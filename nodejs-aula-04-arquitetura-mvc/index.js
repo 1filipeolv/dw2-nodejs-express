@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 
 // Iniciando o servidor da aplicação na porta 8080
 // O método listen do Express inicia um servidor
-app.listen(8083, (error) => {
+app.listen(8080, (error) => {
     if(error){
         console.log("Ocorreu um erro ao iniciar o servidor!" + error)
     } else {
